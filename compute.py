@@ -16,7 +16,9 @@ def compute():
 
     with open(LOG_FILE, "w") as output:
 
-        output.write("Input, Brute Force, Constant\n")
+        header = "Input{0}Brute Force{0}Constant\n"
+        print(header.format("\t"))
+        output.write(header.format(", "))
 
         # We start from 1 because there is no result of a matrix of length 0
         for i in range(1, N_EXECUTIONS):
@@ -32,6 +34,11 @@ def compute():
             total_constant = constant(len(matrix))
             elapsed_constant = default_timer() - start_constant
 
+            print("{0}\t{1}\t{2}".format(i, elapsed_brute_force,
+                elapsed_constant))
             # Logs to file
             output.write("{0}, {1}, {2}\n".format(i, elapsed_brute_force,
                 elapsed_constant))
+
+if __name__ == "__main__":
+    compute()
