@@ -23,6 +23,17 @@ solve that problem...", and he described the **Dominó problem**.
 ### Solution
 
 
+### Evaluation
+
+The following image shows the time execution complexity of each implemented
+algorithm.
+As can be seen, the math function based one runs in a constant way and the
+iterative goes exponentially as the input matrix grows.
+
+![alt text][time-execution]
+[time-execution]: https://github.com/pantuza/domino-problem/blob/master/time-complexity-analysis.png "Time execution complexity analysis"
+
+
 ### Project structure
 
 The project has a Makefile to rule computation, plot and cleaning.
