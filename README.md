@@ -13,8 +13,9 @@ its two parts.
 
 ### Description
 
-During Python Brasil [12] in FLorianópolis I took a cab and the driver
-listened me talking with my friends about computer science stuff.
+During [Python Brasil [12]](http://2016.pythonbrasil.org.br/) in FLorianópolis 
+I took a cab and the driver listened me talking with my friends about
+computer science stuff.
 Then he look at us and said: "Are you from google generation?".
 
 We obviosly answer: "yeah, we are!" Then he said: "Let's see if you can
@@ -37,7 +38,7 @@ iterative goes exponentially as the input matrix grows.
 ### Project structure
 
 The project has a Makefile to rule computation, plot and cleaning.
-The following target rules exist:
+The following target rules exists:
 
 - compute - Computes execution times for implemented algorithms
 - plot    - Run GnuPlot to generate the computation analysis
@@ -57,7 +58,7 @@ $> make clean compute plot show
 ### Contributing
 
 We are not stringent with contributions.
-Just do *fork*, make your modifications, write tests for it and send me a
+Just do a *fork*, make your modifications, write tests for it and send me a
 Pull Request. It will be very welcome!
 
 
