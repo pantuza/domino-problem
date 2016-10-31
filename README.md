@@ -8,6 +8,9 @@ Both parts has a number between 0 and 6.
 Each pair of numbers never repeat and there is no inverse pieace
 with this numbers.
 
+![alt text][domino-pieces]
+[domino-pieces]: https://github.com/pantuza/domino-problem/blob/master/img/domino-pieces.png "Dominó pieces"
+
 Based on that, how many pieces has an odd number as a result of the sum of
 its two parts.
 
@@ -32,7 +35,7 @@ As can be seen, the math function based one runs in a constant way and the
 iterative goes exponentially as the input matrix grows.
 
 ![alt text][time-execution]
-[time-execution]: https://github.com/pantuza/domino-problem/blob/master/time-complexity-analysis.png "Time execution complexity analysis"
+[time-execution]: https://github.com/pantuza/domino-problem/blob/master/img/time-complexity-analysis.png "Time execution complexity analysis"
 
 
 ### Project structure
