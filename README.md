@@ -7,7 +7,7 @@ I took a cab and the driver listened me talking with my friends about
 computer science stuff.
 Then he look at us and said: "Are you from google generation?".
 
-We obviosly answer: "yeah, we are!" Then he said: "Let's see if you can
+We obviosly answer: "yeah, we are! rsrs" Then he said: "Let's see if you can
 solve that problem...", and he described the **Dominó problem**.
 
 ### Problem
@@ -38,6 +38,14 @@ I picked up a paper and a pen inside my backpack and started drawing the possibi
 
 ![alt text][possibilities-matrix]
 [possibilities-matrix]: https://github.com/pantuza/domino-problem/blob/master/img/possibilities-matrix.png "Dominó numbers possibilities matrix"
+
+As can be seen in the above figure, we have a matrix of dominó pieces combinations.
+Each position represents a piece.
+Each coordinate pair (x, y), are the upper and lower parts of a piece.
+
+The values inside matrix cells represents booleans values of the sum of the two parts (x + y). 
+If the sum is odd, then the value is 1. Otherwise the value is 0.
+Through that, is possible to count how many sums resulted in a odd number.
 
 The first observation about the problem was that if what we were looking for was odd resulted numbers, then pieces that have the same number as the upper value and lower value must be excluded from counting. The sum of two even numbers are always an even number. Also, the sum of two odd numbers are always an even number. Based on that, looking at the possibilities matrix, we can exclude the matrix determinant values from counting:
 
