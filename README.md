@@ -2,13 +2,14 @@
 
 ### Description
 
-During [Python Brasil [12]](http://2016.pythonbrasil.org.br/) in FLorianópolis 
-I took a cab and the driver listened me talking with my friends about
+During [Python Brasil [12]](http://2016.pythonbrasil.org.br/) in FLorianópolis - Brazil
+I took a cab and the taxi driver, called Luiz, listened me and my friends talking about
 computer science stuff.
-Then he look at us and said: "Are you from google generation?".
+Then he look at us with a smiling face and said: "Are you from google generation?".
 
-We obviosly answer: "yeah, we are! rsrs" Then he said: "Let's see if you can
-solve that problem...", and he described the **Dominó problem**.
+We obviosly answer: "hell yeah, we are! rsrs" Then he said: "Let's see if you can
+solve this problem...", and he described the **Dominó problem**.
+Luiz is a former economist. Nowadays he is a taxi driver that drop puzzles in his passengers! 
 
 ### Problem
 
@@ -41,17 +42,23 @@ I picked up a paper and a pen inside my backpack and started drawing the possibi
 
 As can be seen in the above figure, we have a matrix of dominó pieces combinations.
 Each position represents a piece.
-Each coordinate pair (x, y), are the upper and lower parts of a piece.
+Each coordinate pair (x, y), are the top and bottom parts of a piece.
 
 The values inside matrix cells represents booleans values of the sum of the two parts (x + y). 
 If the sum is odd, then the value is 1. Otherwise the value is 0.
-Through that, is possible to count how many sums resulted in a odd number.
+Through that, is possible to count how many sums resulted in an odd number.
 
-The first observation about the problem was that if what we were looking for was odd resulted numbers, then pieces that have the same number as the upper value and lower value must be excluded from counting. The sum of two even numbers are always an even number. Also, the sum of two odd numbers are always an even number. Based on that, looking at the possibilities matrix, we can exclude the matrix determinant values from counting:
+The first observation about the problem was that if what we were looking for was odd resulted numbers, then pieces that have the same number as the top and bottom values must be excluded from counting. The sum of two even numbers are always an even number. Also, the sum of two odd numbers are always an even number. Based on that, looking at the possibilities matrix, we can exclude the matrix determinant values from counting:
 
 ![alt text][determinant-matrix]
 [determinant-matrix]: https://github.com/pantuza/domino-problem/blob/master/img/determinant-matrix.png "Dominó numbers determinant matrix"
 
+Another property of the problem is that each pair of number only exist once.
+So, we do not have to iterate over the bottom part of the matrix. 
+For that, we remove the mirrored values from the possibility matrix:
+
+![alt text][problem-matrix]
+[problem-matrix]: https://github.com/pantuza/domino-problem/blob/master/img/problem-matrix.png "Dominó mirrored excluded matrix"
 
 ### Evaluation
 
