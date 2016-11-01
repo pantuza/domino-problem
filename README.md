@@ -95,6 +95,9 @@ The following target rules exists:
 - test    - Run tests using nose
 - clean   - Removes log and image files
 
+### Dependencies
+
+The project uses Python 3.5 for computation, GNUPlot to generate graphs and Python Nose for tests. 
 
 ### Getting started
 
