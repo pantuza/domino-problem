@@ -1,4 +1,4 @@
-# Dominó problem
+# The taxi driver and the Dominó problem
 
 ### Description
 
