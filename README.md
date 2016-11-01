@@ -21,15 +21,15 @@ with this numbers.
 ![alt text][domino-pieces]
 [domino-pieces]: https://github.com/pantuza/domino-problem/blob/master/img/domino-pieces.png "Dominó pieces"
 
-Based on that, how many pieces has an odd number as a result of the sum of
-its two parts.
+Based on that, how many pieces has an **odd number** as a result of the **sum** of
+its two parts?
 
 ### Solution
 
 First of all, we freaked out and try to run a *brute force* algorithm together.
 One of my friends started saying loud the combinations of numbers starting from the lowest to the highest pairs.
 Another friend calculates if the sum of numbers were odd.
-And finally, I was counting the number os odd resulted numbers.
+And finally, I was counting the number of odd resulted numbers.
 
 Basically, it did not work!
 
