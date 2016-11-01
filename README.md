@@ -26,6 +26,20 @@ solve that problem...", and he described the **Dominó problem**.
 
 ### Solution
 
+First of all, we freaked out and try to run a *brute force* algorithm together.
+One of my friends started saying loud the combinations of numbers starting from the lowest to the highest pairs.
+Another friend calculates if the sum of numbers were odd.
+And finally, I was counting the number os odd resulted numbers.
+
+Basically, it did not work!
+
+At this point, the taxi driver was in a very funny work day!
+I picked up a paper and a pen inside my backpack and started drawing the possibilities matrix as follows:
+
+![alt text][possibilities-matrix]
+[possibilities-matrix]: https://github.com/pantuza/domino-problem/blob/master/img/possibilities-matrix.png "Dominó numbers possibilities matrix"
+
+
 
 ### Evaluation
 
