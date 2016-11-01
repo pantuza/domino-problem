@@ -7,7 +7,7 @@ I took a cab and the taxi driver, called Luiz, listened me and my friends talkin
 computer science stuff.
 Then he look at us with a smiling face and said: "Are you from google generation?".
 
-We obviosly answer: "hell yeah, we are! rsrs" Then he said: "Let's see if you can
+We obviosly answered: "hell yeah, we are! rsrs" Then he said: "Let's see if you can
 solve this problem...", and he described the **Dominó problem**.
 Luiz is a former economist. Nowadays he is a taxi driver that drop puzzles in his passengers! 
 
@@ -71,6 +71,42 @@ The output result is the total number of odd resulted numbers.
 
 ![alt text][solution-matrix]
 [solution-matrix]: https://github.com/pantuza/domino-problem/blob/master/img/solution-matrix.png "Dominó solution matrix"
+
+Using a brute force approach we implemented the following algorithm to calculate the number of odd results:
+
+```python
+    total = 0  # Total odd numbers
+
+    rows = cols = len(matrix)
+    increment = 1  # Starts from 1 because determinant values are always even
+
+    for i in range(rows):
+        for j in range(increment, cols):
+
+            if (i + j) % 2:  # If sum is odd we increment total
+                total += 1
+        increment += 1
+    return total
+```
+
+As a metric of the implementation, we tried to increment the matrix size assuming that could exist a dominó with more pieces.
+As the input matrix grows, we noted a pattern of results.
+For any matrix size, to solve that problem we can just apply a simple formula to get the total number of odd resulted values.
+
+f(x) = odd_numbers * even_numbers
+
+Based on that, we create a function to solve the problem using this formula and compare it with the brute force approach result to check correctness.
+
+```python
+    n_even = n_odd = int(n / 2)
+
+    if n % 2:  # Matrix size is odd?
+        n_even = int(n / 2) + 1
+
+    # Domino problem is soved by simple multiplication of even and odd number
+    # inside a matrix of size n
+    return int(n_even * n_odd)
+```
 
 
 ### Evaluation
