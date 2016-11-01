@@ -138,6 +138,11 @@ iterative goes exponentially as the input matrix grows.
 As the input matrix grows, the brute force solution tends to be slower. 
 In the other hand the constant approach does not have impact in its time execution as the matrix grows.
 
+### Conclusion
+
+This project aims to demonstrate that we can look at most simple problems and see and apply computer science on it.
+On the everyday tasks like taking a cab, a bus or at lunch we can come across nice problems.
+Toy problems are always a good place to start a study!
 
 ### Project structure
 
