@@ -11,6 +11,10 @@ We obviosly answer: "hell yeah, we are! rsrs" Then he said: "Let's see if you ca
 solve this problem...", and he described the **Dominó problem**.
 Luiz is a former economist. Nowadays he is a taxi driver that drop puzzles in his passengers! 
 
+![alt text][taxi-driver]
+[taxi-driver]: https://github.com/pantuza/domino-problem/blob/master/img/luiz-economist.png "Luiz, economist/taxi driver"
+
+
 ### Problem
 
 There is a table game called [*Dominó*](https://en.wikipedia.com/domino).
