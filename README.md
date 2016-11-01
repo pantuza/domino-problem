@@ -26,6 +26,24 @@ solve that problem...", and he described the **Dominó problem**.
 
 ### Solution
 
+First of all, we freaked out and try to run a *brute force* algorithm together.
+One of my friends started saying loud the combinations of numbers starting from the lowest to the highest pairs.
+Another friend calculates if the sum of numbers were odd.
+And finally, I was counting the number os odd resulted numbers.
+
+Basically, it did not work!
+
+At this point, the taxi driver was in a very funny work day!
+I picked up a paper and a pen inside my backpack and started drawing the possibilities matrix as follows:
+
+![alt text][possibilities-matrix]
+[possibilities-matrix]: https://github.com/pantuza/domino-problem/blob/master/img/possibilities-matrix.png "Dominó numbers possibilities matrix"
+
+The first observation about the problem was that if what we were looking for was odd resulted numbers, then pieces that have the same number as the upper value and lower value must be excluded from counting. The sum of two even numbers are always an even number. Also, the sum of two odd numbers are always an even number. Based on that, looking at the possibilities matrix, we can exclude the matrix determinant values from counting:
+
+![alt text][determinant-matrix]
+[determinant-matrix]: https://github.com/pantuza/domino-problem/blob/master/img/determinant-matrix.png "Dominó numbers determinant matrix"
+
 
 ### Evaluation
 
