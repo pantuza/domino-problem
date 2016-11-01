@@ -108,8 +108,24 @@ Based on that, we create a function to solve the problem using this formula and 
     return int(n_even * n_odd)
 ```
 
+To verify both implementation we create tests scripts that runs the same matrix for each implementation.
+There is also a script that computes 300 matrices with sizes starting from 1 to 300.
+For each computation a time execution log is written to future analysis.
 
 ### Evaluation
+
+The brute force algorithm takes n^2/2 - n iteration to complete.
+By the [Big O Notation](https://en.wikipedia.org/wiki/Big_O_notation) we have:
+
+    Time complexity: O(n^2)
+    Storage complexity: n * m = O(n^2)       , because n = m. It is a square matrix 
+
+The formula based algorithm takes a constant time to execute. 
+As it do not iterate over the matrix, it just takes the time that the running machine needs to do the calculation.
+So, for the constant algorithm we have:
+
+    Time complexity: O(1)
+    Storage complexity: - Irrelevant
 
 The following image shows the time execution complexity of each implemented
 algorithm.
@@ -118,6 +134,9 @@ iterative goes exponentially as the input matrix grows.
 
 ![alt text][time-execution]
 [time-execution]: https://github.com/pantuza/domino-problem/blob/master/img/time-complexity-analysis.png "Time execution complexity analysis"
+
+As the input matrix grows, the brute force solution tends to be slower. 
+In the other hand the constant approach does not have impact in its time execution as the matrix grows.
 
 
 ### Project structure
