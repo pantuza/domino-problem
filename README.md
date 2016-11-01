@@ -60,6 +60,15 @@ For that, we remove the mirrored values from the possibility matrix:
 ![alt text][problem-matrix]
 [problem-matrix]: https://github.com/pantuza/domino-problem/blob/master/img/problem-matrix.png "Dominó mirrored excluded matrix"
 
+Knowing all of those constraints, to solve the problem we have to iterate over the top part of the matrix excluding the determinant.
+On each iteration step, we check if the sum is odd and count it.
+Otherwise we continue to the next iteration step until there is no steps left.
+The output result is the total number of odd resulted numbers.
+
+![alt text][solution-matrix]
+[solution-matrix]: https://github.com/pantuza/domino-problem/blob/master/img/solution-matrix.png "Dominó solution matrix"
+
+
 ### Evaluation
 
 The following image shows the time execution complexity of each implemented
