@@ -56,8 +56,7 @@ def brute_force(matrix):
 
     total = 0  # Total odd numbers
 
-    rows = len(matrix)
-    cols = rows
+    rows = cols = len(matrix)
     increment = 1  # Starts from 1 because determinant values are always even
 
     for i in range(rows):
