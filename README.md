@@ -151,6 +151,10 @@ Toy problems are always a good place to start a study!
 
 By the way, the result is 12.
 
+![alt text][luiz-time]
+[luiz-time]: https://github.com/pantuza/domino-problem/blob/master/img/luiz-time.png "Luiz time to solve the problem"
+
+
 ### Project structure
 
 The project has a Makefile to rule computation, plot and cleaning.
