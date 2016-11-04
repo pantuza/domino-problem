@@ -9,7 +9,7 @@ Then he look at us with a smiling face and said: "Are you from google generation
 
 We obviosly answered: "hell yeah, we are! rsrs" Then he said: "Let's see if you can
 solve this problem...", and he described the **Dominó problem**.
-Luiz is a former economist. Nowadays he is a taxi driver that drop puzzles in his passengers! 
+Luiz is a former economist. Nowadays he is a taxi driver that drops puzzles in his passengers! 
 
 ![alt text][taxi-driver]
 [taxi-driver]: https://github.com/pantuza/domino-problem/blob/master/img/luiz-economist.png "Luiz, economist/taxi driver"
@@ -71,6 +71,11 @@ The output result is the total number of odd resulted numbers.
 
 ![alt text][solution-matrix]
 [solution-matrix]: https://github.com/pantuza/domino-problem/blob/master/img/solution-matrix.png "Dominó solution matrix"
+
+At this point, Luiz was having great times!
+
+After drawing the matrix and observing the problem we could count the odd sums and answer the problem correctly.
+Also, we find a pattern that makes the counting proccess unnecessary and by applying a calculation the result was found independent of the matrix size. The following paragraphs will discuss these solutions.
 
 Using a brute force approach we implemented the following algorithm to calculate the number of odd results:
 
