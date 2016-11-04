@@ -144,6 +144,8 @@ This project aims to demonstrate that we can look at most simple problems and se
 On the everyday tasks like taking a cab, a bus or at lunch we can come across nice problems.
 Toy problems are always a good place to start a study!
 
+By the way, the result is 12.
+
 ### Project structure
 
 The project has a Makefile to rule computation, plot and cleaning.
