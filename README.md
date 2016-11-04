@@ -177,6 +177,14 @@ Run the following command to compute and plot execution analysis:
 ```bash
 $> make clean compute plot show
 ```
+### Testing
+
+We use Python nose to run tests:
+
+```bash
+$> make test
+```
+
 
 ### Contributing
 
