@@ -11,8 +11,7 @@ We obviosly answered: "hell yeah, we are! rsrs" Then he said: "Let's see if you 
 solve this problem...", and he described the **Dominó problem**.
 Luiz is a former economist. Nowadays he is a taxi driver that drops puzzles in his passengers! 
 
-![alt text][taxi-driver]
-[taxi-driver]: https://github.com/pantuza/domino-problem/blob/master/img/luiz-economist.png "Luiz, economist/taxi driver"
+![taxi-driver](https://github.com/pantuza/domino-problem/blob/master/img/luiz-economist.png "Luiz, economist/taxi driver")
 
 
 ### Problem
@@ -23,8 +22,7 @@ Both parts has a number between 0 and 6.
 Each pair of numbers never repeat and there is no inverse pieace
 with this numbers.
 
-![alt text][domino-pieces]
-[domino-pieces]: https://github.com/pantuza/domino-problem/blob/master/img/domino-pieces.png "Dominó pieces"
+![domino-pieces](https://github.com/pantuza/domino-problem/blob/master/img/domino-pieces.png "Dominó pieces")
 
 Based on that, how many pieces has an **odd number** as a result of the **sum** of
 its two parts?
@@ -41,8 +39,7 @@ Basically, it did not work!
 At this point, the taxi driver was in a very funny work day!
 I picked up a paper and a pen inside my backpack and started drawing the possibilities matrix as follows:
 
-![alt text][possibilities-matrix]
-[possibilities-matrix]: https://github.com/pantuza/domino-problem/blob/master/img/possibilities-matrix.png "Dominó numbers possibilities matrix"
+![possibilities-matrix](https://github.com/pantuza/domino-problem/blob/master/img/possibilities-matrix.png "Dominó numbers possibilities matrix")
 
 As can be seen in the above figure, we have a matrix of dominó pieces combinations.
 Each position represents a piece.
@@ -54,23 +51,20 @@ Through that, is possible to count how many sums resulted in an odd number.
 
 The first observation about the problem was that if what we were looking for was odd resulted numbers, then pieces that have the same number as the top and bottom values must be excluded from counting. The sum of two even numbers are always an even number. Also, the sum of two odd numbers are always an even number. Based on that, looking at the possibilities matrix, we can exclude the matrix determinant values from counting:
 
-![alt text][determinant-matrix]
-[determinant-matrix]: https://github.com/pantuza/domino-problem/blob/master/img/determinant-matrix.png "Dominó numbers determinant matrix"
+![determinant-matrix](https://github.com/pantuza/domino-problem/blob/master/img/determinant-matrix.png "Dominó numbers determinant matrix")
 
 Another property of the problem is that each pair of number only exist once.
 So, we do not have to iterate over the bottom part of the matrix. 
 For that, we remove the mirrored values from the possibility matrix:
 
-![alt text][problem-matrix]
-[problem-matrix]: https://github.com/pantuza/domino-problem/blob/master/img/problem-matrix.png "Dominó mirrored excluded matrix"
+![problem-matrix](https://github.com/pantuza/domino-problem/blob/master/img/problem-matrix.png "Dominó mirrored excluded matrix")
 
 Knowing all of those constraints, to solve the problem we have to iterate over the top part of the matrix excluding the determinant.
 On each iteration step, we check if the sum is odd and count it.
 Otherwise we continue to the next iteration step until there is no steps left.
 The output result is the total number of odd resulted numbers.
 
-![alt text][solution-matrix]
-[solution-matrix]: https://github.com/pantuza/domino-problem/blob/master/img/solution-matrix.png "Dominó solution matrix"
+![solution-matrix](https://github.com/pantuza/domino-problem/blob/master/img/solution-matrix.png "Dominó solution matrix")
 
 At this point, Luiz was having great times!
 
@@ -137,8 +131,7 @@ algorithm.
 As can be seen, the math function based one runs in a constant way and the
 iterative goes exponentially as the input matrix grows.
 
-![alt text][time-execution]
-[time-execution]: https://github.com/pantuza/domino-problem/blob/master/img/time-complexity-analysis.png "Time execution complexity analysis"
+![time-execution](https://github.com/pantuza/domino-problem/blob/master/img/time-complexity-analysis.png "Time execution complexity analysis")
 
 As the input matrix grows, the brute force solution tends to be slower. 
 In the other hand the constant approach does not have impact in its time execution as the matrix grows.
@@ -151,8 +144,7 @@ Toy problems are always a good place to start a study!
 
 By the way, the result is 12.
 
-![alt text][luiz-time]
-[luiz-time]: https://github.com/pantuza/domino-problem/blob/master/img/luiz-time.png "Luiz time to solve the problem"
+![luiz-time](https://github.com/pantuza/domino-problem/blob/master/img/luiz-time.png "Luiz time to solve the problem")
 
 
 ### Project structure
