@@ -1,4 +1,4 @@
-# TL;DR sum([sum(x) for x in [[sum(y) % 2 for y in z] for z in [[(a,b) for a in range(b+1)] for b in range(7)]]])
+# TL;DR sum(sum(c) for c in [[sum((a,b)) % 2 for a in range(b+1)] for b in range(7)])
 
 #
 # Possibility matrix considering a Domino with 0 ~ 6 parts.
