@@ -189,6 +189,11 @@ Pull Request. It will be very welcome!
 
 Written by Gustavo Pantuza <gustavopantuza@gmail.com>
 
+### One Line Solution
+
+The following solution is for those who like One Line of Code programming. 
+Kudos for [Christian Clauss](https://github.com/cclauss) for contributing with the following code:
+
 ```python
 # one liner...
 sum(sum(c) for c in (((a + b) % 2 for a in range(b+1)) for b in range(7)))
