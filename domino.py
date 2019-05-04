@@ -1,4 +1,4 @@
-# TL;DR sum(sum(c) for c in (((a + b) % 2 for a in range(b+1)) for b in range(7)))
+# TL;DR sum((x + y) % 2 for x in range(7) for y in range(x, 7))
 
 #
 # Possibility matrix considering a Domino with 0 ~ 6 parts.
