@@ -196,7 +196,7 @@ Kudos for [Christian Clauss](https://github.com/cclauss) for contributing with t
 
 ```python
 # one liner...
-sum(sum(c) for c in (((a + b) % 2 for a in range(b+1)) for b in range(7)))
+sum((a + b) % 2 for a in range(7) for b in range(a, 7))
 
 # show your work...
 >>> dominos = [[(a, b) for a in range(b+1)] for b in range(7)]
